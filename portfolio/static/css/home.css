@@ -29,7 +29,7 @@ body {
     font-size: 45px;
     letter-spacing: 15px;
     margin: 0 0 0 4px;
-    padding: 60px 15px 0     15px;
+    padding: 60px 15px 0 15px;
 }
 
 .profession {
@@ -42,4 +42,20 @@ body {
 
 .p0 {
     padding: 0;
+}
+
+#triangle-shape {
+    /* background-color: #343a40 */
+    content: "";
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 35px solid #343a40;
+}   
+
+.frame-container {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

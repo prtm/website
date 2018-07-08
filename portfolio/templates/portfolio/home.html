@@ -1,14 +1,65 @@
 {% extends 'portfolio/base.html' %} {% load static %} {% block head %}
-<link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endblock head %} {% block body %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock head %} {% block body %}
 
 
 <div class="container-fluid p0">
     <div class="parallax">
 
-        <h1 class="text-right name">PREETAM SWAMI</h1>
+        <p class="text-right name">PREETAM SWAMI</p>
         <h3 class="text-right profession">Software Developer</h3>
 
     </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-sm-12 navbar-nav" style="padding-right: 0;">
+                <div class="col-sm-1 nav-item text-center">
+                    <a class="navbar-brand" href="#">Home</a>
+                </div>
+                <div class="col-sm-2 nav-item text-center">
+                    <a class="nav-link" href="#">Blog</a>
+                </div>
+                <div class="col-sm-2 nav-item text-center">
+                    <a class="nav-link" href="#">About</a>
+                </div>
+                <div id="arrow" class="col-sm-2 text-center">
+                    <img src="{% static 'images/arrow.png' %}" width="48px" height="41px" />
+                </div>
+                <div class="col-sm-2 nav-item text-center">
+                    <a class="nav-link" href="#">Work</a>
+                </div>
+                <div class="col-sm-2 nav-item text-center">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </div>
+                <div class="col-sm-1 nav-item text-center">
+                    <a class="nav-link" href="#">Hobbies</a>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <nav class="navbar navbar-expand-md sticky-top p0">
+        <div class="col-12 d-flex justify-content-center">
+            <div id="triangle-shape">
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="row">
+        <div class="col-md-2 offset-5">
+
+        </div>
+    </div> -->
+
+
 
 </div>
 
