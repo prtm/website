@@ -114,3 +114,16 @@ body {
 label {
     color: whitesmoke;
 }
+
+.border1{
+    border-color: #6ac1c5;
+}
+.border2{
+    border-color: #59a5a2;
+}
+.border3{
+    border-color: #273c3a;
+}
+.border4{
+    border-color: #18625a;
+}
