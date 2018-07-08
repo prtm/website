@@ -1,0 +1,45 @@
+html,
+body {
+    /*width: auto !important;*/
+    font-family: 'Roboto';
+    background-color: #181818;
+    height: 100%;
+    /*iphone 5 extra margin right*/
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/myphoto_back.png");
+    /*background: url("../img/universe.jpg");*/
+    /* Set a specific height */
+    min-height: 550px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-color: #070606;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 15px;
+    margin: 0 0 0 4px;
+    padding: 60px 15px 0     15px;
+}
+
+.profession {
+    color: #777777;
+    line-height: 1.1;
+    letter-spacing: 5px;
+    margin: 0 0 0 4px;
+    padding: 0 25px 0 25px;
+}
+
+.p0 {
+    padding: 0;
+}
