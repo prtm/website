@@ -4,12 +4,12 @@ body {
     font-family: 'Roboto';
     background-color: #181818;
     height: 100%;
+    overflow-x: hidden;
     /*iphone 5 extra margin right*/
 }
 
-/* .row {
-    margin-left: 0;
-    margin-right: 0;
+/* .container-fluid{
+    background-color: #070606;
 } */
 
 .parallax {
@@ -47,6 +47,10 @@ body {
 
 .p0 {
     padding: 0;
+}
+
+.mT50 {
+    margin-top: 50px;
 }
 
 #triangle-shape {
@@ -115,15 +119,18 @@ label {
     color: whitesmoke;
 }
 
-.border1{
+.border1 {
     border-color: #6ac1c5;
 }
-.border2{
+
+.border2 {
     border-color: #59a5a2;
 }
-.border3{
+
+.border3 {
     border-color: #273c3a;
 }
-.border4{
+
+.border4 {
     border-color: #18625a;
 }
