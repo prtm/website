@@ -28,7 +28,7 @@ def home(request):
             # verify recaptcha3
             token = request.POST.get('token')
             client_ip = get_client_ip(request)
-            print(request.POST, reCAPTCHA_secret, token, client_ip)
+            # print(request.POST, reCAPTCHA_secret, token, client_ip)
             if token is not None:
                 if client_ip is not None:
                     post_data = {'secret': reCAPTCHA_secret,
@@ -39,7 +39,7 @@ def home(request):
 
                 response = requests.post(
                     'https://www.google.com/recaptcha/api/siteverify', data=post_data)
-                print(response, response.content)
+                # print(response, response.content)
                 response_body = json.loads(response.content.decode('utf-8'))
                 if(response_body.get('success')):
                     form.save()

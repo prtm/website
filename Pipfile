@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 mysqlclient = "*"
 requests = "*"
+gunicorn = "*"
 
 [dev-packages]
 pylint = "*"
