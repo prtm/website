@@ -165,7 +165,18 @@
     </div>
 
 </div>
-
+<script src='https://www.google.com/recaptcha/api.js?render=6Ld0OWMUAAAAABEEEK4ZTyNtD58MNb1WXvoRCTk8'></script>
+<script>
+        grecaptcha.ready(function() {
+        grecaptcha.execute('6Ld0OWMUAAAAABEEEK4ZTyNtD58MNb1WXvoRCTk8', {action: 'action_name'})
+        .then(function(token) {
+            var input = $("<input>")
+               .attr("type", "hidden")
+               .attr("name", "token").val(token);
+            $('#form').append($(input));
+        });
+});
+</script>
 
 <script>
     $(function () {
@@ -176,6 +187,14 @@
                 scrollTop: $(document).height() - $(window).height()
             });
         }
+
+        $('#form').on('submit',function(e){
+            // check if token exists
+            var token = $('#form input[name=token]').val()
+            if(token == null || token == ''|| token == undefined){
+                e.preventDefault()
+            }
+        });
     });
 </script>
 
