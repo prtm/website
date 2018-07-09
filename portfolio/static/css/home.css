@@ -54,7 +54,6 @@ body {
 }
 
 #triangle-shape {
-    /* background-color: #343a40 */
     content: "";
     border-left: 45px solid transparent;
     border-right: 45px solid transparent;
@@ -91,6 +90,8 @@ body {
     /* grayscale and transition */
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
     filter: grayscale(100%);
     object-fit: contain;
     transition: all 0.55s ease-in-out;
@@ -101,6 +102,8 @@ body {
 .diamond img:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
     filter: none;
     cursor: pointer;
 }
