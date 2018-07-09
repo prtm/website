@@ -8,6 +8,7 @@ from .forms import MessageForm
 
 # Create your views here.
 
+
 def home(request):
     if request.method == 'POST':
         # Form was submitted
@@ -15,7 +16,7 @@ def home(request):
         scroll_to_bottom = True
         if form.is_valid():
             # Form fields passed validation
-            print(form)
+            form.save()
             form = MessageForm()
             messages.success(request, 'Submission successful')
     else:
