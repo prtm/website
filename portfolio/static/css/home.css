@@ -63,9 +63,8 @@ body {
 
 .diamond {
     display: inline-block;
-    width: 175px;
-    height: 175px;
-    /* margin-top: 50px; */
+    width: 150px;
+    height: 150px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -73,14 +72,15 @@ body {
     transform: rotate(-45deg);
     border: 3px solid #dee2e6;
     border-radius: .25rem;
+    background-color: white;
     overflow: hidden;
 }
 
 .diamond img {
     display: block;
-    width: 263px;
-    height: 263px;
-    margin: -131px 0 0 0;
+    width: 200px;
+    height: 200px;
+    margin: calc(-67%) 0 0 0;
     /* rotate */
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -92,6 +92,7 @@ body {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
+    object-fit: contain;
     transition: all 0.55s ease-in-out;
     -moz-transition: all 0.55s ease-in-out;
     -webkit-transition: all 0.55s ease-in-out;
@@ -133,4 +134,36 @@ label {
 
 .border4 {
     border-color: #18625a;
+}
+
+.border1:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #6ac1c5, rgba(0, 0, 0, 0)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#6ac1c5), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -moz-border-image: -moz-linear-gradient(linear, left top, left bottom, from(#6ac1c5), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -o-border-image: -o-linear-gradient(linear, left top, left bottom, from(#6ac1c5), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+.border2:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #59a5a2, rgba(0, 0, 0, 0)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#59a5a2), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -moz-border-image: -moz-linear-gradient(linear, left top, left bottom, from(#59a5a2), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -o-border-image: -o-linear-gradient(linear, left top, left bottom, from(#59a5a2), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+.border3:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #273c3a, rgba(0, 0, 0, 0)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#273c3a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -moz-border-image: -moz-linear-gradient(linear, left top, left bottom, from(#273c3a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -o-border-image: -o-linear-gradient(linear, left top, left bottom, from(#273c3a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+.border4:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #18625a, rgba(0, 0, 0, 0)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#18625a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -moz-border-image: -moz-linear-gradient(linear, left top, left bottom, from(#18625a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    -o-border-image: -o-linear-gradient(linear, left top, left bottom, from(#18625a), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
 }
